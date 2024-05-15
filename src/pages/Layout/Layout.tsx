@@ -1,10 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import Navbar from '../../components/Navbar/Navbar';
 
 const Layout = () => {
   return (
         <div id='layout-wrapper'>
-            
+            <Navbar/>
+            <Outlet/>
         </div>
   )
 }
