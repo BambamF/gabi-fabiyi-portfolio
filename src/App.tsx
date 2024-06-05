@@ -5,14 +5,14 @@ import Layout from './pages/Layout/Layout';
 import Home from './pages/Home/Home';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Router>
       <Routes>
-        <Route path='/' element={<Layout/>}></Route>
-        <Route index element={<Home/>}/>
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Home/>}/>
+        </Route>
       </Routes>
     </Router>
     </>
